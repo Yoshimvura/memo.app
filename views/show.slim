@@ -1,0 +1,27 @@
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js""></script>
+
+
+a href="/"トップへ戻る
+a href="/edit/#{@id}"メモ編集
+
+h2 タイトル
+p #{@title}
+
+h3 内容
+p #{@body}
+
+form action="/show/delete/#{@id}" method="post"
+ input type="hidden" name="_method" value="DELETE"
+ input  class="btn btn-primary" type="submit" value="削除" 
+
+
+    
+
+
+
+
+ 

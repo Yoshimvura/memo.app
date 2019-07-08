@@ -1,0 +1,27 @@
+<head>
+<meta charset="utf-8">
+<!-- BootstrapのCSS読み込み -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<!-- jQuery読み込み -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- BootstrapのJS読み込み -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+
+a href="/"トップへ戻る
+form action="/edit/update/#{@id}" method="post"
+  input type="hidden" name="_method" value="PATCH"
+  p 
+    | タイトル
+    br
+    input type="text" name="title" size="20" value="#{@title}"
+
+  p 
+    | 本文
+    br
+    textarea name="body" rows="4" cols="40" ="#{@body}"
+
+  input type="submit" value="変更"
+
+ 
+

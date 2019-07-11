@@ -5,8 +5,8 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js""></script>
 
 
-a href="/"トップへ戻る
-a href="/edit/#{@id}"メモ編集
+a href="/memos"トップへ戻る
+a href="/memos/#{@id}/edit"メモ編集
 
 h2 タイトル
 p #{@title}
@@ -14,7 +14,7 @@ p #{@title}
 h3 内容
 p #{@body}
 
-form action="/show/delete/#{@id}" method="post"
+form action="/memos/#{@id}" method="post"
  input type="hidden" name="_method" value="DELETE"
  input  class="btn btn-primary" type="submit" value="削除" 
 

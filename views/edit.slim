@@ -1,15 +1,12 @@
 <head>
 <meta charset="utf-8">
-<!-- BootstrapのCSS読み込み -->
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<!-- jQuery読み込み -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!-- BootstrapのJS読み込み -->
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 
-a href="/"トップへ戻る
-form action="/edit/update/#{@id}" method="post"
+a href="/memos"トップへ戻る
+form action="/memos/#{@id}" method="post"
   input type="hidden" name="_method" value="PATCH"
   p 
     | タイトル

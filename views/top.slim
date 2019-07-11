@@ -4,7 +4,7 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js""></script>
 
-a class="btn btn-link" href="new"メモ新規作成</a>
+a class="btn btn-link" href="memos/new"メモ新規作成</a>
 
 
 h1 メモアプリ
@@ -12,6 +12,6 @@ ul
   - @table.each do |f| 
     - next if f[0] == "id"
     li
-     a href="/show/#{f[0]}" = f[1] 
+     a href="/memos/#{f[0]}" = f[1] 
  
      

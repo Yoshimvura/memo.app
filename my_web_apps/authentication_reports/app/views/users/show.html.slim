@@ -1,0 +1,19 @@
+h1 プロフィール
+p #{image_tag @image, :size =>'100x100'} 
+p 名前 :  #{@user.name}
+p メールアドレス :  #{@user.email}
+p 自己紹介　: #{@user.profile}
+p 住所　: #{@user.postcode} #{@user.address}
+
+= render 'follow_form'
+= render 'stats' 
+
+= link_to "ログアウト", destroy_user_session_path, method: :delete
+br
+= link_to "編集", edit_user_registration_path
+br
+= link_to "ブックリスト", books_path
+br
+= link_to "レポート", reports_path
+br
+= link_to "ユーザー一覧", users_path

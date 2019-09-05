@@ -1,0 +1,59 @@
+ja:
+  books:
+    create:
+      book created: ブック新規作成しました
+    update:
+      book updated: ブック更新しました
+    destroy:
+      book destroyed: ブック削除しました
+  reports:
+    create:
+      report created: レポート新規作成しました
+    update:
+      report updated: レポート更新しました
+    destroy:
+      report destroyed: レポート削除しました
+  activerecord:
+    models:
+      book: 本
+      user: ユーザー
+    attributes:
+      book:
+        title: 作品名
+        author: 著者名
+        created_at: 登録日時
+        updated_at: 更新日時
+      user:
+        email: メールアドレス
+        password: パスワード
+        password_confirmation: 確認用パスワード
+        current_password: 現在のパスワード
+        name: 名前
+        avatar: アバター
+        profile: プロフィール
+        address: 住所
+        postcode: 郵便番号
+  helpers:
+    submit:
+      create: 登録する
+      update: 更新する
+      submit: 保存する     
+  errors:
+      messages:
+        invalid: "が不正な値です。"
+        confirmation: "が一致しません。"
+        accepted: "を承諾してください。"
+        empty: "が記入されていません。"
+        blank: "が記入されていません。"
+        inclusion: "は一覧にありません。"
+        exclusion: "は予約されています。"
+        too_long: "は%{count}文字以内で記入してください。"
+        too_short: "は%{count}文字以上で記入してください。"
+        wrong_length: "は%{count}文字で記入してください。"
+        taken: "はすでに使用されています。"
+        not_a_number: "は数値で入力してください。"
+        greater_than: "は%{count}より大きい値を指定してください。"
+        greater_than_or_equal_to: "は%{count}以上の値を指定してください。"
+        equal_to: "は%{count}を指定してください。"
+        less_than: "は%{count}より小さい値を指定してください。"
+        less_than_or_equal_to: "は%{count}以下の値を指定してください。"

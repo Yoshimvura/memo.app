@@ -1,0 +1,8 @@
+h1 Comments#edit
+p Find me in app/views/comments/edit.html.slim
+
+= form_with model: @comment, url: [@commentable,@comment], local: true do |f|
+  .form-group
+    = f.label :comment
+    = f.text_area :comment 
+  = f.submit

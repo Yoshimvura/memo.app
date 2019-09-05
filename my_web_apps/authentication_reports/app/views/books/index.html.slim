@@ -1,0 +1,29 @@
+h1 ブックリスト
+
+table
+  thead
+    tr
+      th Title
+      th Memo
+      th
+      th
+      th
+
+  tbody
+    - @books.each do |book| 
+     - if book.user_id == current_user.id
+      tr
+        td = book.title 
+        td = book.memo
+        td = link_to 'Show', book
+        td = link_to 'Edit', edit_book_path(book)
+        td = link_to 'Destroy', book, data: { confirm: 'Are you sure?' }, method: :delete
+        
+br
+
+= link_to 'New Book', new_book_path
+br
+= link_to 'Home', user_path(current_user.id)
+
+
+= paginate(@books)

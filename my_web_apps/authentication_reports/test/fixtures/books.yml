@@ -1,0 +1,14 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# one:
+#   title: MyString
+#   memo: MyText
+
+#two:
+# title: MyString
+#  memo: MyText
+
+test_book:
+  title: "bible"
+  memo: "content"
+  id: 1

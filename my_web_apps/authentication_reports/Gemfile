@@ -81,4 +81,4 @@ gem "kaminari-bootstrap"
 gem "bootstrap"
 gem "jp_prefecture"
 gem "jquery-rails"
-gem "capistrano"
+
